@@ -15,7 +15,7 @@
         set userID =#{userID},userNickname=#{userNickname},userPassword=#{userPassword}
         where userNum=#{userNum}
     </update>
-    <select id="queryUserByID" resultType="Users">
+    <select id="queryUserByUserNum" resultType="Users">
         select * from ssmbuild.users where userNum = #{userNum}
     </select>
     <select id="queryAllUser" resultType="Users">
